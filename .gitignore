@@ -1,0 +1,7 @@
+# Does not push heavy files (XML) into the GitHub repository
+
+data/xml_files
+
+# Python virtual environment
+
+.venv
