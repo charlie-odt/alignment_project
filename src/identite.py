@@ -44,8 +44,8 @@ def calcul_identite(seq1,seq2):
   return (positions_identiques / longueur_utile) * 100
 
 #lance le calcul et creation des fichiers avec les matrices d'identite
-dossier = "alignements_fasta"
-dossier_destination = "matrices_resultats"
+dossier = "../data/fasta_files"
+dossier_destination = "../data/matrices_id"
 
 if not os.path.exists(dossier_destination):
     os.makedirs(dossier_destination)
