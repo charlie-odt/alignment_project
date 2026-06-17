@@ -33,12 +33,12 @@ def lire_fichier(nom_fichier):
 def calcul_identite(seq1,seq2):
   positions_identiques= 0
   longueur_utile = 0
-  for aa1,aa2 in zip(seq1,seq2):
-    if aa1 == '-' and aa2 == '-':
-      continue
-    longueur_utile += 1
-    if aa1 == aa2:
-      positions_identiques += 1
+    for aa1,aa2 in zip(seq1,seq2):
+        if aa1 == '-' and aa2 == '-':
+          continue
+        longueur_utile += 1
+        if aa1 == aa2:
+          positions_identiques += 1
     if longueur_utile == 0:
       return 0.0
   return (positions_identiques / longueur_utile) * 100
