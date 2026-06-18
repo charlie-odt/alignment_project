@@ -41,7 +41,7 @@ def calcul_identite(seq1,seq2):
           positions_identiques += 1
   if longueur_utile == 0:
       return 0.0
-  return (positions_identiques / longueur_utile) * 100
+  return (positions_identiques / longueur_utile) 
 
 #lance le calcul et creation des fichiers avec les matrices d'identite
 dossier = "../data/fasta_files"
