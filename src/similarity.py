@@ -9,12 +9,16 @@ def identity_ratio(seq1, seq2):
     counter = 0
     length = 0
     while seq1 and seq2:
-        length += 1
-        if seq1[0] == seq2[0] and seq1[0] != '-':
-            counter += 1
+        if seq1[0] != "-" or seq2[0] != "-":
+            length += 1
+            if seq1[0] == seq2[0]:
+                counter += 1
         seq1 = seq1[1:]
         seq2 = seq2[1:]
-    return counter/length
+    if length > 0:
+        return counter / length
+    else:
+        return 0.0
 
 def create_similarity_matrix(df):
     """
@@ -26,7 +30,7 @@ def create_similarity_matrix(df):
     for i in range(N):
         for j in range(i,N):
             mat[i,j] = identity_ratio(df.loc[i]["sequence"], df.loc[j]["sequence"])
-            mat[j,i] = identity_ratio(df.loc[i]["sequence"], df.loc[j]["sequence"])
+            mat[j,i] = mat[i,j]
     
     return mat
 
