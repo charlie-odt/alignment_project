@@ -11,7 +11,7 @@ def identity_ratio(seq1, seq2):
     while seq1 and seq2:
         if seq1[0] != "-" or seq2[0] != "-":
             length += 1
-            if seq1[0] == seq2[0]:
+            if seq1[0] == seq2[0] and seq1[0] != "-":
                 counter += 1
         seq1 = seq1[1:]
         seq2 = seq2[1:]
