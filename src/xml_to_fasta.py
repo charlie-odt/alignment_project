@@ -104,7 +104,7 @@ def process_directory(source_dir, output_dir):
 
 if __name__ == "__main__":
     # Paths are defined relative to the current script location (src/)
-    INPUT_DIR = os.path.join("..", "data", "xml_files")
-    OUTPUT_DIR = os.path.join("..", "data", "fasta_files")
+    INPUT_DIR = os.path.join("..", "training")
+    OUTPUT_DIR = os.path.join("..", "data", "fasta_files", "training")
 
     process_directory(INPUT_DIR, OUTPUT_DIR)

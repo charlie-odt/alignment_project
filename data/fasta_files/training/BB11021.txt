@@ -1,0 +1,4 @@
+dkatipsespfaaaevadgaivvdiak------mkyetpelhvkv--gdtvtwinream--phnvhfvagvlgeaalkg------------------------pmmkkeqaysltfte--agtydyhct--ph--pfmrgkvvve------------------------------	1aac_	-1	1	105	Raw_Sequence
+------------------devavkmlnsgpggmmvfdpalvrlkp--gdsikflptdk---ghnvetikgmapdg-------------------------adyvkttvgqeavvkfdk--egvygfkca--phymmgmvalvvvgdkrdnleaaksvqhnkltqkrldplfaqiq	1pmy_	-1	1	123	Raw_Sequence
+--------------------akvevgde--vgnfkfypdsitvsa--geaveftlvget--ghnivfdipagapgtvaselkaas-------------mdendllsedepsfkakvst--pgtytfyct--phksanmkgtltvk------------------------------	1kdi_	-1	1	102	Raw_Sequence
+-----anapggsnvvnetpaqtvevraa--pdalafaqtslslpantvvrldfvnqnnlgvqhnwvlvnggddvaaavntaaqnnadalfvpppdtpnalawtamlnagesgsvtfrtpapgtylyictfpghylagmkgtltvtp-----------------------------	1ov8_A	-1	1	139	Raw_Sequence

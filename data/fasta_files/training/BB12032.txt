@@ -1,0 +1,9 @@
+---------------------lkckklv-----plfsktcpagknlcykmfmvaa----phvpvkrgcidvcpk--ssllvkyvccnt-dkcn---------	1cb9_A	-1	1	60	Raw_Sequence
+---------------------rtclisp-----sstpqtcpngqdicflkaqcdkfcsirgpvieqgcvatcpqf-rsnyrsllcctt-dncnh--------	1kba_A	-1	1	66	Raw_Sequence
+---------------------tmcyshtttsr--ailtnc--genscyrksrrhp----pkmvlgrgcg--cpp--gddylevkcctspdkcny--------	1fas_	-1	1	61	Raw_Sequence
+---------------------ricynhlgtkp--pttetc--qedscykniwtf------dniirrgcg--cftprgdmpgpy-cces-dkcnl--------	1drs_	-1	1	59	Raw_Sequence
+---------------------lechnqqssqt--ptttgcsggetncykkrwrdh----rgyrtergcg--cps--vkngieincctt-drcnn--------	1cod_	-1	1	62	Raw_Sequence
+---------------------tkcyvtp-----dvksetcpagqdlcytetwcvawctvrgkrvsltcaaicpi--vppkvsikccst-dacgpfptwpnvr	NXL3_OPHHA	-1	1	73	Raw_Sequence
+---------------------mkckicnfdtcragelkvcasgekycfkeswrea----rgtriergcaatcpkg-svyglyvlcctt-ddcn---------	CADO_BUNCA	-1	1	66	Raw_Sequence
+mktllltlvvvtivcldlgytiicrtrdtyqi-pitftnce-eghvcykysttet---pnrilihrgcaakcpk-----rlrviccst-dkcnk--------	NXSH_BUNMU	-1	1	83	Raw_Sequence
+---------------------ltcvkeksif--gvttedcpdgqnlcfkrwhmiv---pgrykktrgcaatcpi--aenrdvieccst-dkcnl--------	TXM2_NAJKA	-1	1	65	Raw_Sequence

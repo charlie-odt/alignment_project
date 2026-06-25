@@ -1,0 +1,7 @@
+----------------------vdvpadgakidfiag---geknltvvfnhsthk-----dvkcddchhdpgdkq--------yagcttdgch-nildkadksvn--swykvvhdakggakptcischkdkagddkelkkkltgckgsachp--	1wad_	-1	1	111	Raw_Sequence
+--------------------tfeipesvtmspkqfegy--tpkkgdvtfnhashm-----diacqqchhtvpdty-------tiescmtegch-dni-kerteis--svyrtfhttk-dsekscvgchrelkr--qgpsdaplac--nschvq-	1czj_	-1	1	110	Raw_Sequence
+------------------------apavpdkpvevkg-----sqktvmfphaphe-----kvecvtchhlvdgke-------syakcgssgch-ddl-takkgek--slyyvvhargelkhtsclachskvvaekpelkkdltgcakskchp--	1gm4_A	-1	1	107	Raw_Sequence
+mkklfsmlvaaalvgtmamaaqavpqvpadvvidhlsnpnakleykvkfshkahaslgtdaaacqkchhkwdgks-------eiggcategchadttsfkatekdpkflmtafhsks---pmscqgchkemkt--akkttgptac--aqchnqk	CY3B_DESAF	-1	1	140	Raw_Sequence
+---------------adapgddyvisapegmkakpkgdkpgalqktvpfphtkha-----tvecvqchhtleadg------gavkkcttsgch-dslefrdkana--kdiklvesaf---htqcidchalkkk--dkkptgptac--gkchttn	CY31_DESDN	-1	1	118	Raw_Sequence
+-----------------------ldvpckvvitapegedphprfgkvemshakhr-----nvscvschhmfdgcg-------dfqkcad--ch--idrddrsyer--gfykawhse---seiscrgchkamka--kneqtgpigcl-qgchea-	1gyo_A	-1	1	106	Raw_Sequence
+------------------------xedmthvptdafg---klerpaavfnhdehnek-agiescnachhvwvngvlaededsvgtpcsd--ch---aleqdgdtp--glqdayhq-------qcwgchekqak-------gpvmc--gechvkn	3cao_A	-1	1	103	Raw_Sequence

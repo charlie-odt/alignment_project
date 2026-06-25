@@ -1,0 +1,6 @@
+---merlsed-dpaaqaleyrhdassvq-----hpay-eegqtclncllytdasa---qdwgpcsv--fpgklvsangwctawvar--	1hpi_	-1	1	71	Raw_Sequence
+sapanavaad-nataialkynqdatkservaaarpglppeeqhcadcqfmqadaagatdewkgcql--fpgklinvngwcaswtlkag	1hip_	-1	1	85	Raw_Sequence
+---epraed-----ghahdyvneaadasg----hpry-qegqlcencafwgeavq---dgwgrcthpdfdevlvkaegwcsvyapas-	2hip_A	-1	1	71	Raw_Sequence
+--aaplvaet-danakslgyvadttkadktk--ypkh-tkdqscstcalyqgkta----pqgacpl--fagkevvakgwcsawakka-	1hlq_A	-1	1	75	Raw_Sequence
+-edlphvdaatnpiaqslhyiedanasernpvtktelpgseqfchncsfiqadsg----awrpctl--ypgytvsedgwclswahkta	HPIS_THIPF	-1	1	81	Raw_Sequence
+-qdlppldps-aeqaqalnyvkdtaeaad----hpah-qegeqcdncmffqadsq-------gcql--fpqnsvepagwcqswtaqn-	HPIS_PARSP	-1	1	71	Raw_Sequence

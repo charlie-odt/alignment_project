@@ -1,0 +1,4 @@
+---gkgdpkkprgkmssyaffvqtsreehkkkhpdasvnfsefskkcserwktmsakekgkfedmakadkaryeremktyippkge----------	1aab_	-1	1	83	Raw_Sequence
+------mqdrvkrpmnafivwsrdqrrkmalenp--rmrnseiskqlgyqwkmlteaekwpffqeaqklqamhrekypnykyrprrkakmlpk---	1j46_A	-1	1	85	Raw_Sequence
+mkklkkhpdfpkkpltpyfrffmekrakyaklhp--emsnldltkilskkykelpekkkmkyiqdfqrekqefernlarfredhpdliqnakk---	1k99_A	-1	1	91	Raw_Sequence
+--------mhikkplnafmlymkemranvvaest--lkesaainqilgrrwhalsreeqakyyelarkerqlhmqlypgwsardnygkkkkrkrek	2lef_A	-1	1	86	Raw_Sequence

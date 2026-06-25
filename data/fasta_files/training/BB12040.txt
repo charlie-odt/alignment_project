@@ -1,0 +1,5 @@
+-gfpipdpyvwdpsfrtfysiiddehktlfngifhlaiddn-----------adnlgelrrctgkhflnqevlmeasqyqfydehkkehdgfinaldnwkg-------------dvkwakawlvnhiktidfkykgki--------------------------	1hrb_	-1	1	113	Raw_Sequence
+mattipspfnwdssfcvgnnelneqhkklfalinaldanrss----------asalkelldfvvmhfkaeedlfakvnfsdstshkethdkfvqdalglkt-vg--------daeiqfikqwlvnhikgsdmkykgvl--------------------------	HEML_NAEFO	-1	1	119	Raw_Sequence
+---mkkeiikwskdfetgikafddehkilvktlndiynllne---gkrdeakellkrrvvnyaakhfkheeevmekygypdlerhrktheifvktviekllpkieegsendfrsalsflvgwltmhiakpdkkygewfkekgiviedeavkid-----------	HEMT_METJA	-1	1	147	Raw_Sequence
+-------mfvwkdefelgidkidnehrklfeiankgyellknefyvdkydkimdiivelkeyaefhfseeedylasigykklfthklehdsfikkvesfnikeidydqdkyiqemldfvvtwikehilekdreyid----------------------------	HEMT_CLOAB	-1	1	129	Raw_Sequence
+-----mahlvwqddlntgiqvidnqhkriveminhlhdaqq----gkehaaiaevieelvdytlshfafeetlmedagyqfsrahkkihelfirrvseyrvrfqagedvg--delkgllsrwlfnhirnddagyvdavrhsmselvkdkseggwlsrsmkrffg	HEMT_PSEAE	-1	1	153	Raw_Sequence

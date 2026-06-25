@@ -26,10 +26,10 @@ if __name__ == "__main__":
     # Paths are defined relative to the current script location (src/)
     
     # Takes all FASTA files to convert them to CSV format
-    for name in os.listdir("../data/fasta_files"):
+    for name in os.listdir("../data/fasta_files/training"):
         if name.endswith(".fasta"):
             alt_name = name.replace(".fasta", ".csv")
-            input_path = f"../data/fasta_files/{name}"
-            output_path = f"../data/csv_files/{alt_name}"
+            input_path = f"../data/fasta_files/training/{name}"
+            output_path = f"../data/csv_files/training/{alt_name}"
             # Creates the CSV file
             convert_fasta_to_csv(input_path, output_path)

@@ -1,0 +1,8 @@
+-------------------vkdgyivdd-vnctyfcg---rnaycneectklkgesgycqwaspygnacycyklpdhvrtkg-pgr-ch---	1aho_	-1	1	64	Raw_Sequence
+-------------------vrdgyiaqp-encvyhcfp--gssgcdtlckekggtsghcgfkvghglacwcnalpdnvgiivegek-chs--	1bmr_	-1	1	67	Raw_Sequence
+--------------------kdgypvds-kgcklscv---annycdnqckmkkasgghcya-----mscyceglpenakvsdsatnicg---	1i6f_A	-1	1	60	Raw_Sequence
+mklflllvisasmlidglvnadgyirgs-ngckvscll--gnegcnkecraygasygycwt---wklacwcqglpddktwks-esntcggkk	AEP_MESMA	-1	1	85	Raw_Sequence
+-mkiiiflivcsfvligvkadngyllnkytgckiwcvi--nnescnsecklrrgnygycyf---wklacycegapkselway-etnkcngkm	SCAT_MESMA	-1	1	85	Raw_Sequence
+-------------------grdgyvvkngtnckysceigseyeycgplckrknaktgycya-----facwcidvpddvklygddgtycss--	SCX6_ANDAU	-1	1	66	Raw_Sequence
+-mnsllmiigclvligtvwtkegylvnmktgckygcyelgdngycdrkckaesgnygycyt-----vgcwceglpnskptwplpgkscsgk-	SCX6_CENLL	-1	1	85	Raw_Sequence
+-----------------advpgnypldk-dgntykcfllggneeclnvcklhgvqygycya-----skcwceyleddkdsv-----------	BIRT_PARTR	-1	1	58	Raw_Sequence

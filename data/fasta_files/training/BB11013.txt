@@ -1,0 +1,5 @@
+-----------------------------------mevkktswteeedrilyqahkrlg-nrwaeiakllp-----grtdnaiknhwnstmrrkv--------------------	1idy_	-1	1	54	Raw_Sequence
+--------------------------------------shptysemiaaairaeksrgg-ssrqsiqkyikshykvghnadlqiklsirrllaagvlkqtkgvgasgsfrlak--	1hst_A	-1	1	74	Raw_Sequence
+--------------------------------------prgsalsdteraqldvmklln-vslhemsrkis------rsrhcirvylkdpvsygts-------------------	1tc3_C	-1	1	51	Raw_Sequence
+-------------------------------------mrssakqeelvkafkallkeekfssqgeivaalqeqgfdninqskvsrmltkfgavrtrnakmemvyclpaelgvptt	1aoy_	-1	1	78	Raw_Sequence
+saamaeqrhqewlrfvdllknayqndlhlpllnlmltpderealgtrvriieellrge--msqrelknelg------agiatitrgsnslkaapvelrqwleevllksd------	1jhg_A	-1	1	101	Raw_Sequence
