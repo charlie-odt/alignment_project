@@ -70,7 +70,7 @@ for i, proteine in enumerate(numeros_proteines):
     moyenne_reference_exp = somme_totale_exp/(m*(m-1))
     
     #Optimisation des hyperparamètres epsilon_1 et epsilon_2 via KKT
-    eps_1,eps_2 = optimiser_epsilons(EPSILON_GLOBAL, moyenne_reference_exp, m, L, approximation=False)
+    eps_1,eps_2 = optimiser_epsilons(EPSILON_GLOBAL, moyenne_reference_exp, m, L)
     
     #Calcul de la borne supérieure théorique
     borne_hoeffding = L*np.sqrt((4*np.log(1/eps_2))/m)
