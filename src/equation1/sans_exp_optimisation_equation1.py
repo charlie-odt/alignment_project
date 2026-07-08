@@ -13,13 +13,8 @@ def equation_kkt(epsilon_1,epsilon_global,moyenne_ref,m,L=1.0):
 
 
 
-def optimiser_epsilons(epsilon_global,moyenne_ref,m,L=1.0,approximation=False):
-    #page 2 approximation avec 1/2
-    if approximation:
-        eps_1 = 0.5 if epsilon_global > 0.5 else epsilon_global * 0.5
-        eps_2 = epsilon_global - eps_1
-        return eps_1, eps_2
-    
+def optimiser_epsilons(epsilon_global,moyenne_ref,m,L=1.0):
+   
     #Résolution numérique de l'équation KKT
     estimation_initiale = epsilon_global / 2
     try:
@@ -75,7 +70,7 @@ for i, proteine in enumerate(numeros_proteines):
     moyenne_reference_exp = somme_totale_exp/(m*(m-1))
     
     #Optimisation des hyperparamètres epsilon_1 et epsilon_2 via KKT
-    eps_1,eps_2 = optimiser_epsilons(EPSILON_GLOBAL, moyenne_reference_exp, m, L, approximation=False)
+    eps_1,eps_2 = optimiser_epsilons(EPSILON_GLOBAL, moyenne_reference_exp, m, L)
     
     #Calcul de la borne supérieure théorique
     borne_hoeffding = L*np.sqrt((4*np.log(1/eps_2))/m)
@@ -86,11 +81,11 @@ for i, proteine in enumerate(numeros_proteines):
     ecart_cible = 1.0-np.mean(X_test)
     X_exp = np.exp(-ecart_cible / T)
     
-    #Règle de décision : Si X_exp dépasse la borne_totale, c'est un outlier ("extreme")
+    #Règle de décision : Si X_exp dépasse la borne_totale, c'est un extreme
     score_aberration = X_exp - borne_totale
     statut = "extreme" if score_aberration > 0 else "bonne"
     
-    # Stockage des résultats au même format
+    #Stockage des résultats au même format
     resultats.append({
         "proteine": proteine, 
         "statut": statut, 
