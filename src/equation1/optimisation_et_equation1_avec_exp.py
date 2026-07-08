@@ -13,13 +13,8 @@ def equation_kkt(epsilon_1,epsilon_global,moyenne_ref,m,L=1.0):
     return (L/np.sqrt(m))*(1/(np.sqrt(np.log(1/epsilon_2))*epsilon_2))-(moyenne_ref/(epsilon_1**2))
 
 
-def optimiser_epsilons(epsilon_global,moyenne_ref,m,L=1.0,approximation=False):
-    #page 2 approximation avec 1/2
-    if approximation:
-        eps_1 = 0.5 if epsilon_global > 0.5 else epsilon_global * 0.5
-        eps_2 = epsilon_global - eps_1
-        return eps_1, eps_2
-    
+def optimiser_epsilons(epsilon_global,moyenne_ref,m,L=1.0):
+  
     #Résolution numérique de l'équation KKT
     estimation_initiale = epsilon_global / 2
     try:
@@ -64,7 +59,6 @@ for i, proteine in enumerate(numeros_proteines):
             
     m = X_train.shape[0]
     
-    #Transformation avec exponentielle
     #ecart = 1.0 - similarité
     ecarts = 1.0 - X_train
 
@@ -87,11 +81,11 @@ for i, proteine in enumerate(numeros_proteines):
     ecart_cible = 1.0-np.mean(X_test)
     X_exp = np.exp(-ecart_cible / T)
     
-    #Règle de décision : Si X_exp dépasse la borne_totale, c'est un outlier ("extreme")
+    #Règle de décision : Si X_exp dépasse la borne_totale, c'est un extreme
     score_aberration = X_exp - borne_totale
     statut = "extreme" if score_aberration > 0 else "bonne"
     
-    # Stockage des résultats au même format
+    #Stockage des résultats au même format
     resultats.append({
         "proteine": proteine, 
         "statut": statut, 
