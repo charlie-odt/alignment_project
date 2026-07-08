@@ -37,8 +37,8 @@ for i, proteine in enumerate(numeros_proteines):
     
     
     #moyenne de référence transformée (somme globale sans la trace)
-    somme_totale_exp = np.sum(ecarts)-np.trace(ecarts)
-    moyenne_reference_exp = somme_totale_exp/(m*(m-1))
+    somme_totale = np.sum(ecarts)-np.trace(ecarts)
+    moyenne_reference = somme_totale/(m*(m-1))
     
     #pas d'optimisation on fait 50/50
     eps_1 = EPSILON_GLOBAL/2
@@ -46,15 +46,15 @@ for i, proteine in enumerate(numeros_proteines):
     
     #Calcul de la borne supérieure théorique
     borne_hoeffding = L*np.sqrt((4*np.log(1/eps_2))/m)
-    borne_markov = (1/eps_1)*moyenne_reference_exp
+    borne_markov = (1/eps_1)*moyenne_reference
     borne_totale = borne_hoeffding + borne_markov
     
     # 4. Évaluation de la protéine cible (X_test)
     ecart_cible = 1.0-np.mean(X_test)
-    X_exp = np.exp(-ecart_cible / T)
+
     
     #Règle de décision : Si X_exp dépasse la borne_totale, c'est un extreme
-    score_aberration = X_exp - borne_totale
+    score_aberration = ecart_cible- borne_totale
     statut = "extreme" if score_aberration > 0 else "bonne"
     
     #Stockage des résultats au même format
