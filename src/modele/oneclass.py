@@ -2,7 +2,7 @@ from sklearn import svm
 import numpy as np
 import pandas as pd
 
-chemin_matrice = "../../data/similarity_tab/similarity_e_maj.npy"
+chemin_matrice = "../../data/similarity_tab/test/similarity_e_maj.npy"
 matrice = np.load(chemin_matrice)
 N = matrice.shape[0]
 matrice_distance = 1-matrice
