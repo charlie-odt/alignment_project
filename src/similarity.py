@@ -39,11 +39,14 @@ def create_similarity_matrix(df):
 
 if __name__ == "__main__":
     
-    for name in os.listdir("../data/csv_files/training"):
-        alt_name = name.replace(".csv", ".npy")
-        alt_name = "../data/similarity_tab/training/similarity_" + alt_name
+    #for name in os.listdir("../data/csv_files/training"):
+    #    alt_name = name.replace(".csv", ".npy")
+    #    alt_name = "../data/similarity_tab/training/similarity_" + alt_name
         
-        df = pd.read_csv(f"../data/csv_files/training/{name}")
-        mat = create_similarity_matrix(df)
-        np.save(alt_name, mat)
-        
+    #    df = pd.read_csv(f"../data/csv_files/training/{name}")
+    #    mat = create_similarity_matrix(df)
+    #    np.save(alt_name, mat)
+    
+    df = pd.read_csv("../data/csv_files/training/BB20004_clean.csv")
+    mat = create_similarity_matrix(df)
+    np.save("../data/similarity_tab/training/similarity_BB20004_clean.npy", mat)
