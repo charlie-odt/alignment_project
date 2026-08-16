@@ -8,7 +8,7 @@ N = matrice.shape[0]
 
 numeros_proteines = [f"Prot_{i}" for i in range(N)]
 
-DELTA = 0.0005  #1-risque
+DELTA = 0.0005  #risque
 resultats = []
 
 for i, proteine in enumerate(numeros_proteines):
