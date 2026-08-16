@@ -32,7 +32,7 @@ def create_similarity_matrix(df):
 
     for i in range(N):
         for j in range(i,N):
-            mat[i,j] = identity_ratio(df.loc[i]["sequence"], df.loc[j]["sequence"])
+            mat[i,j] = identity_ratio(df.iloc[i]["sequence"], df.iloc[j]["sequence"])
             mat[j,i] = mat[i,j]
     
     return mat
