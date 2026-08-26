@@ -33,12 +33,12 @@ class outlier_classifier:
         # 3. Compute the threshold for outlier detection
         c = 0.125 + 2.0 * np.sqrt(moy)
         rad = (2.0 * c) / np.sqrt(self._n - 1) # with LaTeX
-        threshold = np.mean(f_train) + 2 * rad + np.sqrt(np.log(1 / delta) / (2 * (self._n - 1)))
+        threshold = np.mean(f_train) + rad + np.sqrt(np.log(1 / delta) / (2 * (self._n - 1)))
 
         # 4. Identify outliers
 
         # Compute the values of f for the sequences in the dataset with outliers
-        f_outlier = self._K[index_outlier, index_outlier] - 2 * (1/(self._n - 1)) * np.sum(self._K[index_outlier, :]) + moy
+        f_outlier = 1 - 2 * (1/(self._n - 1)) * (np.sum(self._K[index_outlier, :])-1) + moy
 
         # 5. Print the results if verbose is set to True
         if verbose:
