@@ -23,18 +23,25 @@ def identity_ratio(seq1, seq2):
     else:
         return 0.0
 
-def create_similarity_matrix(df):
+def create_similarity_matrix(df, kernel = "id", gamma = 1.0):
     """
     Creates the similarity matrix from the alignment dataframe and returns the NumPy matrix.
     """
     N = df.shape[0]
     mat = np.zeros((N, N))
 
-    for i in range(N):
-        for j in range(i,N):
-            mat[i,j] = identity_ratio(df.iloc[i]["sequence"], df.iloc[j]["sequence"])
-            mat[j,i] = mat[i,j]
-    
+    if kernel == "id":
+        for i in range(N):
+            for j in range(i, N):
+                mat[i, j] = identity_ratio(df.iloc[i]["sequence"], df.iloc[j]["sequence"])
+                mat[j, i] = mat[i, j]
+
+    elif kernel == "exp":
+        for i in range(N):
+            for j in range(i, N):
+                mat[i, j] = np.exp(-gamma * (1 - identity_ratio(df.iloc[i]["sequence"], df.iloc[j]["sequence"])))
+                mat[j, i] = mat[i, j]
+
     return mat
 
 if __name__ == "__main__":
