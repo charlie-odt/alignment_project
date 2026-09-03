@@ -1,31 +1,44 @@
-import pandas as pd
+import os
 import numpy as np
+import pandas as pd
+from outlier_classifier import outlier_classifier
 
-# 1. Load the dataset without outliers (2)
-K_train = np.load("../data/similarity_tab/training/similarity_BB20004_clean.npy")
-n = K_train.shape[0]
+#Chemins d'accès
+dossier_entree = "../data/csv_files/test"
+dossier_sortie = "../data/results_test"
+os.makedirs(dossier_sortie, exist_ok=True)
 
-# 2. 
+#Récupération des fichiers .csv
+fichiers = [f for f in os.listdir(dossier_entree) if f.endswith(".csv")]
+print(f"Nombre d'alignements trouvés : {len(fichiers)}")
 
-# Compute the mean of the distance matrix (without outliers)
-moy = np.mean(K_train)
+resultats_globaux = []
 
-# Compute the values of f for the sequences in the training set
-f_train = [K_train[i, i] - 2 * (1/n) * np.sum(K_train[i, :]) + moy for i in range(K_train.shape[0])]
+#Boucle sur chaque alignement
+for idx, nom_fichier in enumerate(fichiers, start=1):
+    chemin_csv = os.path.join(dossier_entree, nom_fichier)
 
-# 3. Compute the threshold for outlier detection
-rad = 0 ### to be specified, not equal to 0
-delta = 0.05  # set a value for delta
-threshold = np.mean(f_train) + 2 * rad + np.sqrt(np.log(1 / delta) / (2 * n))
+    #Instanciation de la classe
+    classifier = outlier_classifier(chemin_csv)
 
-# 4. Identify outliers
-K_outliers = np.load("../data/similarity_tab/training/similarity_BB20004.npy")
+    #Exécution du Leave-One-Out sur tout le fichier
+    df_fichier = classifier.fit_predict(delta=0.05, verbose=False)
+    df_fichier["fichier_alignement"] = nom_fichier
 
-# Compute the values of f for the sequences in the dataset with outliers
-index_outlier = 1
-f_outlier = K_outliers[index_outlier, index_outlier] - 2 * (1/n) * np.sum(K_outliers[index_outlier, :]) + moy
+    #Sauvegarde individuelle
+    nom_csv_sortie = os.path.join(dossier_sortie, f"res_{nom_fichier}")
+    df_fichier.to_csv(nom_csv_sortie, index=False)
 
-# 5. Print the results
-print(f_outlier)
-print(threshold)
-# Here f_outlier > threshold, so the sequence is considered an outlier.
+    resultats_globaux.append(df_fichier)
+
+#Récapitulatif global
+if resultats_globaux:
+    df_total = pd.concat(resultats_globaux, ignore_index=True)
+    chemin_global = os.path.join(dossier_sortie, "recapitulatif_global.csv")
+    df_total.to_csv(chemin_global, index=False)
+    
+    #Résumé
+    total_sequences = len(df_total)
+    total_outliers = df_total["is_outlier"].sum()
+    print(f"Séquences analysées : {total_sequences}")
+    print(f"Anomalies détectées : {total_outliers}")
