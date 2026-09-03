@@ -42,6 +42,12 @@ def create_similarity_matrix(df, kernel = "id", gamma = 1.0):
                 mat[i, j] = np.exp(-gamma * (1 - identity_ratio(df.iloc[i]["sequence"], df.iloc[j]["sequence"])))
                 mat[j, i] = mat[i, j]
 
+    elif kernel == "poly":
+        for i in range(N):
+            for j in range(i, N):
+                mat[i, j] = identity_ratio(df.iloc[i]["sequence"], df.iloc[j]["sequence"]) ** gamma
+                mat[j, i] = mat[i, j]
+
     return mat
 
 if __name__ == "__main__":
