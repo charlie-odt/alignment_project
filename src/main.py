@@ -22,7 +22,7 @@ for idx, nom_fichier in enumerate(fichiers, start=1):
     classifier = outlier_classifier(chemin_csv)
 
     #Exécution du Leave-One-Out sur tout le fichier
-    df_fichier = classifier.fit_predict(delta=0.05, verbose=False)
+    df_fichier = classifier.fit_predict(delta=0.05, verbose=False) #on modifie ici le delta 
     df_fichier["fichier_alignement"] = nom_fichier
 
     #Sauvegarde individuelle
