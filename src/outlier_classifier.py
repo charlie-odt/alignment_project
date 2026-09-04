@@ -29,8 +29,9 @@ class outlier_classifier:
         Returns True if the sequence is an outlier, False otherwise.
         """
         #Remove the outlier from the dataset and create the similarity matrix
-        tmp_df = self._df.drop(index_outlier)
-        K_train = create_similarity_matrix(tmp_df)
+        K_train = np.delete(
+            np.delete(self._K, index_outlier, axis=0), index_outlier, axis=1
+        )
         m = self._n - 1
         #Compute the mean of the distance matrix (without outlier)
         moy = np.mean(K_train)
