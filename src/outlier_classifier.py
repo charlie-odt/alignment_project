@@ -10,7 +10,7 @@ class outlier_classifier:
         self._seq_names = self._df['protein_name'].values
         self._K = create_similarity_matrix(self._df)
 
-    def fit_predict(self, delta = 0.05, verbose = False)
+    def fit_predict(self, delta = 0.05, verbose = False):
         #We have to leave one sequence out of the training set, and repeat it for each sequence.
         results = []
         for i in range(self._n):
