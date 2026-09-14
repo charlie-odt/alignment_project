@@ -4,11 +4,11 @@ import os
 from similarity import create_similarity_matrix#, identity_ratio
 
 class outlier_classifier:
-    def __init__(self, csv_file : str):
+    def __init__(self, csv_file : str, kernel = "id", gamma = 1.0):
         self._df = pd.read_csv(csv_file)
         self._n = self._df.shape[0]
         self._seq_names = self._df['protein_name'].values
-        self._K = create_similarity_matrix(self._df)
+        self._K = create_similarity_matrix(self._df, kernel=kernel, gamma=gamma)
 
     def fit_predict(self, delta = 0.05, verbose = False):
         #We have to leave one sequence out of the training set, and repeat it for each sequence.
