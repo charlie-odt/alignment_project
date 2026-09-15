@@ -10,6 +10,13 @@ class outlier_classifier:
         self._seq_names = self._df['protein_name'].values
         self._K = create_similarity_matrix(self._df, kernel=kernel, gamma=gamma)
 
+        # Verifies that the similarity matrix is semi-positive definite.
+        min_eig = np.min(np.linalg.eigvals(self._K))
+        if min_eig < -1e-10:
+            raise ValueError(
+                f"The similarity matrix is not semi-positive definite. "
+            )
+
     def fit_predict(self, delta = 0.05, verbose = False):
         #We have to leave one sequence out of the training set, and repeat it for each sequence.
         results = []
@@ -40,8 +47,8 @@ class outlier_classifier:
         f_train = [K_train[i, i] - 2 * (1/m) * np.sum(K_train[i, :]) + moy for i in range(m)]
 
         #Compute the threshold for outlier detection
-        c = 0.125 + 2.0 * np.sqrt(moy)
-        rad = (2.0 * c) / np.sqrt(m) # with LaTeX
+        c = 1.0 / np.sqrt(m) 
+        rad = 2.0 * c
         threshold = np.mean(f_train) + rad + np.sqrt(np.log(1 / delta) / (2 * m))
 
         #Identify outliers
@@ -66,6 +73,6 @@ class outlier_classifier:
 
 if __name__ == "__main__":
     #Example usage
-    csv_file = "../data/csv_files/training/BB20004.csv"
-    classifier = outlier_classifier(csv_file)
-    classifier.fit_predict_one(1)
+    csv_file = "../data/csv_files/training/BB20026.csv"
+    classifier = outlier_classifier(csv_file, kernel="poly", gamma=0.8)
+    print(classifier.fit_predict(delta=0.15))
